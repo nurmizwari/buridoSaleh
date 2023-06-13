@@ -55,12 +55,15 @@ export default function Home() {
         padding: 5,
         backgroundColor: "#61dafb",
         height: 70,
+        width: 150,
         marginTop: 10,
         borderRadius: 5,
-        marginRight: 2,
+        marginRight: 5,
         shadowColor: "black",
         shadowRadius: 10,
         elevation: 3,
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <Text style={{ color: "white" }}>{item.Warung}</Text>
@@ -72,7 +75,10 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <StatusBar animated={true} backgroundColor="#61dafb" />
-      <Image style={{ marginTop: 10 }} source={require("../assets/cart.png")} />
+      <Image
+        style={{ marginTop: 10, height: "30%" }}
+        source={require("../assets/cart.png")}
+      />
       <View
         style={{
           backgroundColor: "grey",
