@@ -35,7 +35,7 @@ export default function Login() {
         secureTextEntry
       />
       <TouchableOpacity style={styles.button}>
-        <Text style={{ color: "white" }}>Login</Text>
+        <Text style={{ color: "black" }}>Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 20,
+    // backgroundColor: "red",
   },
   input: {
     height: 40,
@@ -58,11 +59,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   button: {
-    width: 150,
+    width: "100%",
     marginTop: 10,
-    backgroundColor: "#3498db",
+    elevation: 4,
+    backgroundColor: "#79EA99",
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 10,
     alignItems: "center",
   },
 });

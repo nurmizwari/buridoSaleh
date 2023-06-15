@@ -67,6 +67,7 @@ export default function Home() {
         elevation: 3,
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: 10,
       }}
     >
       <Text style={{ color: "black", fontWeight: 700 }}>{item.Warung}</Text>
@@ -130,7 +131,16 @@ export default function Home() {
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
       />
-      <View style={{ flex: 1, marginVertical: 10 }}>
+      <View
+        style={{
+          flex: 1,
+          marginVertical: 20,
+          backgroundColor: "#F1D4E5",
+          padding: 10,
+          borderRadius: 10,
+          elevation: 3,
+        }}
+      >
         <Text
           style={{
             color: "black",
@@ -149,7 +159,7 @@ export default function Home() {
           autoCapitalize="none"
         />
         <TouchableOpacity style={styles.button}>
-          <Text style={{ color: "white", fontWeight: 700, fontSize: 14 }}>
+          <Text style={{ color: "black", fontWeight: 700, fontSize: 14 }}>
             Kirim
           </Text>
         </TouchableOpacity>
